@@ -15,7 +15,7 @@ class Logout extends MY_Controller
             'is_login'
         ];
 
-        $this->session->unset_userdata('$sess_data');
+        $this->session->unset_userdata($sess_data);
 
         $this->session->sess_destroy();
         redirect(base_url());
